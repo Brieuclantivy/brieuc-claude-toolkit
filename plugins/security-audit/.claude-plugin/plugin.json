@@ -1,0 +1,8 @@
+{
+  "name": "security-audit",
+  "version": "0.1.0",
+  "description": "Audit de sécurité complet d'un projet (analyse statique + tests dynamiques locaux) avec rapport Markdown détaillé en français : description, impact, reproduction et correction de chaque faille. Ne modifie jamais le code.",
+  "author": {
+    "name": "Brieuc Gide"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "brieuc-claude-toolkit",
+  "description": "Plugins Claude Code : audit de sécurité, et à venir génération de projet, review…",
+  "owner": {
+    "name": "Brieuc Gide"
+  },
+  "plugins": [
+    {
+      "name": "security-audit",
+      "displayName": "Security Audit",
+      "source": "./plugins/security-audit",
+      "description": "Audit de sécurité complet d'un projet (analyse statique + tests dynamiques locaux) avec rapport Markdown détaillé en français. Ne modifie jamais le code."
+    }
+  ]
+}
