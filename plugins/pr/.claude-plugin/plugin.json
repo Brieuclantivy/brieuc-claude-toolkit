@@ -1,0 +1,8 @@
+{
+  "name": "pr",
+  "version": "0.1.0",
+  "description": "Récupère les commentaires de review de la PR de la branche courante, vérifie s'ils sont fondés et propose pour chacun une solution, une explication et une réponse courte à copier-coller. Ne modifie jamais le code et ne publie rien sur GitHub.",
+  "author": {
+    "name": "Brieuc Gide"
+  }
+}

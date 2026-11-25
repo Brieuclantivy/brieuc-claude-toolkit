@@ -5,6 +5,7 @@ Marketplace de plugins Claude Code.
 | Plugin | Description |
 |---|---|
 | [`security-audit`](#security-audit) | Audit de sécurité complet d'un projet, avec rapport détaillé. Ne modifie jamais le code. |
+| [`pr`](#pr) | Analyse les commentaires de review de la PR de la branche et propose solution + réponse à copier-coller. |
 
 ## Installation
 
@@ -51,6 +52,30 @@ Dans le projet à auditer :
 Alias : `/security-audit:test-security`, `/security-audit:review-project`. On peut aussi simplement demander « fais un audit de sécurité du projet ».
 
 Précisions utiles à ajouter à la commande, par exemple : `statique uniquement`, `seulement le dossier api/`, `l'app se lance avec docker compose up`.
+
+---
+
+## pr
+
+Aide à traiter les commentaires de review de la PR de la branche courante :
+
+- récupère via `gh` les fils de commentaires non résolus, les reviews et les commentaires généraux (en ignorant les fils résolus, ceux auxquels l'auteur a déjà répondu et le bruit des bots CI) ;
+- vérifie chaque commentaire contre le code réel : fondé, partiellement fondé, non fondé, déjà corrigé ou question à discuter ;
+- propose pour chacun **une solution**, **une courte explication** et **une réponse de une ou deux phrases**, sur un ton naturel, à copier-coller sur GitHub.
+
+**Le plugin ne modifie jamais le code et ne publie rien sur GitHub** : c'est toi qui réponds. À la fin, il propose d'appliquer les corrections des commentaires fondés.
+
+Prérequis : `gh` installé et authentifié (`gh auth status`).
+
+### Utilisation
+
+Dans le projet, sur la branche de la PR :
+
+```
+/pr:comments
+```
+
+On peut aussi passer un numéro ou une URL de PR (`/pr:comments 123`), ou simplement demander « regarde les commentaires de ma PR ».
 
 ---
 
