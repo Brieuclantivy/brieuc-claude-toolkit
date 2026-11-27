@@ -1,0 +1,8 @@
+{
+  "name": "bdc",
+  "version": "0.1.0",
+  "description": "Base de connaissance (Bdc) pour les devs, générée à partir des pièces d'un appel d'offres et de notre réponse : exigences sourcées, modèle, glossaire, questions au client, mises à jour, livrables (tickets, swagger, schéma BDD, doc), et confrontation du code existant à la Bdc (état de réalisation, conformité).",
+  "author": {
+    "name": "Brieuc Gide"
+  }
+}

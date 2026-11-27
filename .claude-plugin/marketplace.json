@@ -16,6 +16,12 @@
       "displayName": "PR",
       "source": "./plugins/pr",
       "description": "Analyse les commentaires de review de la PR de la branche courante : validité, solution, explication et réponse courte à copier-coller. Ne modifie jamais le code et ne publie rien sur GitHub."
+    },
+    {
+      "name": "bdc",
+      "displayName": "Bdc",
+      "source": "./plugins/bdc",
+      "description": "Base de connaissance (Bdc) pour les devs à partir des pièces d'un appel d'offres et de notre réponse : exigences sourcées et vérifiées, modèle, glossaire, questions au client, mises à jour, livrables (tickets, swagger, schéma BDD, doc)."
     }
   ]
 }
